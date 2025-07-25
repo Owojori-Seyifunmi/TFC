@@ -1,0 +1,539 @@
+i am building a landing page for my event. this is the information about the event below
+
+### **Landing Page Template: Discovering Your Identity Beyond Motherhood 2025**  
+
+#### **Hero Section (Top of the Page)**  
+**Header Text (Bold + Empowering):**  
+**Discover Your Identity Beyond Motherhood**  
+**Theme:** *The Journey To Her*  
+
+*A one-day women's conference for renewal, reconnection, and realignment.*  
+
+📍 **Manchester City Centre**  
+📅 **Saturday, 13th September 2025**  
+🕚 **10:00 AM – 6:00 PM**  
+
+**[Reserve Your Seat]** *(CTA button – visible immediately)*  
+
+---  
+
+### **💛 About the Conference**  
+**Header:**  
+*This is not just a conference. It is a call back to yourself.*  
+
+Maybe you have been feeling stuck.  
+Like something is missing, even if life looks “fine” on the outside.  
+You have shown up for everyone else… and somewhere along the way, you stopped showing up for you.  
+
+The **“Discovering Your Identity Beyond Motherhood” Conference** is a full-day experience designed for women, whether you are a mum or not, who are ready to realign with their next season of growth.  
+
+It is your space to breathe, reflect, and reconnect with the woman you have put on pause for too long.  
+
+**This conference is for you if:**  
+- You have been showing up for everyone, except yourself  
+- You are craving clarity, peace, purpose, or something more  
+- You feel like you have paused your dreams for too long  
+- You want to evolve, expand, and breathe again  
+
+i need an hero section with my image by the left and text by the right, ill provide css for header and reset so you follow from there@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --color-bg:  #f9f4fb;
+    --color-white: #f2f8fc;
+    --color-light: #c9c6c6c7;
+    --color-black: #282427;
+    --color-text-one: #ff6a10;
+    --color-text-two: #7870b8;
+
+    --container-width-lg: 87%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    font-family: "raleway", sans-serif;  
+    color: var(--color-black);
+    background-color: #a37045;
+
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+.container-two{
+    background-color: var(--color-light);
+}
+.container-three{
+  background-color: var(--color-black);
+}
+section{
+    padding: 2rem 0;
+}
+
+a{
+    color: var(--color-black);
+}
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--color-black);
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* NAVIGATION BAR START */
+.header-nav{
+    position: fixed;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    background-color: #f4f1f8;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    z-index: 1000;
+}
+
+.header-left img{
+    width: 100px;
+}
+
+.links{
+    display: flex;
+    gap: 2rem;
+}
+nav .links a{
+    font-size: 1rem;
+    transition: var(--transition);
+    color: #282427;
+}
+
+nav .links a:hover::after{
+    width: 100%;
+    background-color: black;
+
+}
+
+.socials{
+    display: flex;
+    gap: 1.3rem;
+}
+.socials a{
+    font-size: 1.1rem;
+    transition: var(--transition);
+    color: #282427;
+}
+.socials a:hover{
+    color:black;
+}
+
+
+.nav-toggle{
+    display: none;
+}
+/* NAVIGATION BAR END */
+
+
+/* NAVIGATION BAR RESPONSIVENESS */
+@media screen and (max-width:750px){
+    .nav-toggle{
+        display: block;
+        font-size: 1.3rem;
+        background-color: transparent;
+        border: transparent;
+        transition: .9s;
+        cursor: pointer;
+        color: var(--color-black);
+    }
+    .nav-toggle:hover{
+        transform: rotate(90deg);
+    }
+    .links{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-text-one);
+        padding: 70px 0 0 40px;
+
+        transform: translate(100%);
+        transition: var(--transition);
+        z-index: 1000;
+    }
+    .show-links{
+        transform: translate(0);
+        
+    }
+    .links a{
+        display: inline-block;
+        
+    }
+    .socials{
+        display: none;
+    }
+    
+}
+
+/* NAVIGATION BAR RESPONSIVENESS */
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root {
+    --color-bg:  #f9f4fb;
+    --color-white: #f2f8fc;
+    --color-light: #c9c6c6c7;
+    --color-black: #282427;
+    --color-text-one: #ff6a10;
+    --color-text-two: #7870b8;
+
+    --container-width-lg: 87%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body{
+    font-family: "raleway", sans-serif;  
+    color: var(--color-black);
+    background-color: #a37045;
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+.container-two{
+    background-color: var(--color-light);
+}
+.container-three{
+  background-color: var(--color-black);
+}
+section{
+    padding: 2rem 0;
+}
+
+a{
+    color: var(--color-black);
+}
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--color-black);
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* NAVIGATION BAR START */
+.header-nav{
+    position: fixed;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    background-color: #f4f1f8;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    z-index: 1000;
+}
+
+.header-left img{
+    width: 100px;
+}
+
+.links{
+    display: flex;
+    gap: 2rem;
+}
+nav .links a{
+    font-size: 1rem;
+    transition: var(--transition);
+    color: #282427;
+}
+
+nav .links a:hover::after{
+    width: 100%;
+    background-color: black;
+}
+
+.socials{
+    display: flex;
+    gap: 1.3rem;
+}
+.socials a{
+    font-size: 1.1rem;
+    transition: var(--transition);
+    color: #282427;
+}
+.socials a:hover{
+    color:black;
+}
+
+.nav-toggle{
+    display: none;
+}
+/* NAVIGATION BAR END */
+
+/* HERO SECTION */
+.hero {
+    padding-top: 100px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-bg);
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-left {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-right h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--color-text-two);
+}
+
+.hero-right .theme {
+    font-style: italic;
+    color: var(--color-text-one);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.hero-right p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.event-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.event-details-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-text-one);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    text-align: center;
+    width: fit-content;
+}
+
+.btn:hover {
+    background: var(--color-text-two);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 5rem 0;
+    background-color: var(--color-white);
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-header {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-text-one);
+}
+
+.about p {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-list {
+    text-align: left;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.about-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.about-list li:before {
+    content: "•";
+    color: var(--color-text-one);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+/* NAVIGATION BAR RESPONSIVENESS */
+@media screen and (max-width:750px){
+    .nav-toggle{
+        display: block;
+        font-size: 1.3rem;
+        background-color: transparent;
+        border: transparent;
+        transition: .9s;
+        cursor: pointer;
+        color: var(--color-black);
+    }
+    .nav-toggle:hover{
+        transform: rotate(90deg);
+    }
+    .links{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-text-one);
+        padding: 70px 0 0 40px;
+
+        transform: translate(100%);
+        transition: var(--transition);
+        z-index: 1000;
+    }
+    .show-links{
+        transform: translate(0);
+        
+    }
+    .links a{
+        display: inline-block;
+        
+    }
+    .socials{
+        display: none;
+    }
+}
+
+/* HERO SECTION RESPONSIVENESS */
+@media screen and (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 4rem;
+    }
+    
+    .hero-right {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .btn {
+        margin: 0 auto;
+    }
+    
+    .about-list {
+        text-align: center;
+    }
+}
